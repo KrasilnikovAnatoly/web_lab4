@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Запись к врачу</title>
+</head>
+
+<body>
+    
+    <h1>Список врачей:</h1>
+    <ul>
+        {{#each doctors}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <form method="post" >
+    <div><ul>Введите ФИО врача:</ul>
+        <ul><input type="text" name="name"/></ul></div>
+    <div><ul>Введите время посещения:</ul><ul>(Пример: 2023-12-20T18:00:00.00Z)</ul>
+        <ul><input type="text" name="date"/></ul></div>
+    <ul><button type="submit"/>Записаться</ul></form>
+</body>
+</html>
